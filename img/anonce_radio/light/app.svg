@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="_Слой_2" data-name="Слой 2" xmlns="http://www.w3.org/2000/svg" width="446.63" height="319.39" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 446.63 319.39">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: url(#_Безымянный_градиент_306);
+      }
+
+      .cls-2 {
+        fill: url(#_Безымянный_градиент_306-2);
+      }
+    </style>
+    <linearGradient id="_Безымянный_градиент_306" data-name="Безымянный градиент 306" x1="151.81" y1="189.37" x2="-7.79" y2="29.77" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#1a1a1a" stop-opacity="0"/>
+      <stop offset=".4" stop-color="#1a1a1a" stop-opacity=".22"/>
+      <stop offset=".91" stop-color="#1a1a1a" stop-opacity=".86"/>
+      <stop offset="1" stop-color="#1a1a1a"/>
+    </linearGradient>
+    <linearGradient id="_Безымянный_градиент_306-2" data-name="Безымянный градиент 306" x1="294.39" y1="130.44" x2="453.99" y2="290.04" xlink:href="#_Безымянный_градиент_306"/>
+  </defs>
+  <g id="_Слой_1-2" data-name="Слой 1">
+    <g>
+      <polygon class="cls-1" points="21.8 317.38 1.42 296.99 1.42 22.57 22.57 1.42 222.46 1.42 222.46 0 21.98 0 0 21.98 0 297.58 21.8 319.39 21.8 317.38"/>
+      <polygon class="cls-2" points="424.82 2.01 445.21 22.39 445.21 296.82 424.06 317.97 222.46 317.97 222.46 319.39 424.64 319.39 446.63 297.4 446.63 21.8 424.82 0 424.82 2.01"/>
+    </g>
+  </g>
+</svg>

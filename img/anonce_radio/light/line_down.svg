@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="_Слой_2" data-name="Слой 2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 504.85 71.27">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: url(#_Безымянный_градиент_269);
+      }
+    </style>
+    <linearGradient id="_Безымянный_градиент_269" data-name="Безымянный градиент 269" x1="504.85" y1="35.64" x2="0" y2="35.64" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#1b1b1b" stop-opacity="0"/>
+      <stop offset=".39" stop-color="#1b1b1b" stop-opacity=".22"/>
+      <stop offset=".89" stop-color="#1b1b1b" stop-opacity=".83"/>
+      <stop offset="1" stop-color="#1b1b1b"/>
+    </linearGradient>
+  </defs>
+  <g id="_Слой_1-2" data-name="Слой 1">
+    <polygon class="cls-1" points="41.76 71.23 504.85 71.27 504.85 69.93 42.32 69.89 41.99 69.56 1.45 28.83 1.34 0 0 0 .11 29.38 41.76 71.23"/>
+  </g>
+</svg>

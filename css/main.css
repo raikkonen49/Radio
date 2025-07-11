@@ -1,0 +1,103 @@
+@import "anonce_radio.css";
+
+:root {
+  --color-light: #1b1b1b;
+  --color-dark: #FBF501;
+  --color-white: #ffffff;
+  --main-font: 'Golos', sans-serif;
+  --header-font: 'BankGothic RUSS', sans-serif;
+}
+
+@font-face {
+    font-family: 'Golos';
+    src: url('../font/golostext_bold.ttf') format('truetype');
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: 'Golos';
+    src: url('../font/golostext_regular.ttf') format('truetype');
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: 'Golos';
+    src: url('../font/golostext_medium.ttf') format('truetype');
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: 'BankGothic RUSS';
+    src: url('../font/BankGothicRUSSMedium.ttf') format('truetype');
+    font-weight: 500;
+}
+
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1.5;
+	font-family: 'Nunito', sans-serif;
+    background-color: #fff;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+.layouts-title {
+	font-size: 26px;
+	margin:15px 0px;
+}
+
+.layouts ul li {
+	margin-bottom:5px;
+}
+
+.layouts ul li a {
+	font-size: 17px;
+	display: inline-block;
+	padding:3px 10px;
+}
+
+.layouts ul li a:hover {
+	background:#000;
+	color:#fff;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
