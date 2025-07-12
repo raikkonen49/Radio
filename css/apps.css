@@ -1,0 +1,134 @@
+.apps-block {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 32px;
+    padding: 0 19px;
+    margin-bottom: 46px;
+}
+
+.apps-item {
+    height: 319px;
+    padding: 34px 0;
+    position: relative;
+}
+
+.apps-item::after {
+    position: absolute;
+    content: '';
+    top: 0;
+    right: 0;
+    bottom: -1px;
+    width: 50%;
+    background-color: var(--color-light);
+    -webkit-mask: url(../img/anonce_radio/light/app-right.svg) no-repeat right bottom;
+    mask: url(../img/anonce_radio/light/app-right.svg) no-repeat right bottom;
+    -webkit-mask-size: cover;
+    mask-size: cover;
+}
+
+.apps-item::before {
+    position: absolute;
+    content: '';
+    top: -1px;
+    left: 0;
+    bottom: 0;
+    width: 50%;
+    background-color: var(--color-light);
+    -webkit-mask: url(../img/anonce_radio/light/app-left.svg) no-repeat top left;
+    mask: url(../img/anonce_radio/light/app-left.svg) no-repeat top left;
+    -webkit-mask-size: cover;
+    mask-size: cover;
+}
+
+.apps-item:nth-child(1) .apps-item-img {
+    background-color: var(--color-light);
+    -webkit-mask: url(../img/anonce_radio/light/tv.svg) no-repeat center center;
+    mask: url(../img/anonce_radio/light/tv.svg) no-repeat center center;
+}
+
+.apps-item:nth-child(2) .apps-item-img {
+    background-color: var(--color-light);
+    -webkit-mask: url(../img/anonce_radio/light/phone.svg) no-repeat center center;
+    mask: url(../img/anonce_radio/light/phone.svg) no-repeat center center;
+}
+
+.apps-item:nth-child(3) .apps-item-img {
+    background-color: var(--color-light);
+    -webkit-mask: url(../img/anonce_radio/light/radio.svg) no-repeat center center;
+    mask: url(../img/anonce_radio/light/radio.svg) no-repeat center center;
+}
+
+.apps-item:nth-child(4) .apps-item-img {
+    background-color: var(--color-light);
+    -webkit-mask: url(../img/anonce_radio/light/auto.svg) no-repeat center center;
+    mask: url(../img/anonce_radio/light/auto.svg) no-repeat center center;
+}
+
+.apps-item-img {
+    height: 101.5px;
+    margin-bottom: 16px;
+}
+
+.apps-item-title {
+    text-transform: uppercase;
+}
+
+.apps-item-title,
+.apps-item-text {
+    font-size: 20px;
+    color: var(--color-light);
+    text-align: center;
+    letter-spacing: -0.4px;
+    line-height: 29px;
+    font-family: var(--main-font);
+    font-weight: 500;
+}
+
+.apps-item-text {
+    font-weight: 400;
+}
+
+@media screen and (prefers-color-scheme: dark) {
+
+    .apps-item::after {
+        background-color: var(--color-dark);
+        -webkit-mask: url(../img/anonce_radio/dark/app-right.svg) no-repeat right bottom;
+        mask: url(../img/anonce_radio/dark/app-right.svg) no-repeat right bottom;
+        -webkit-mask-size: cover;
+        mask-size: cover;
+    }
+
+    .apps-item::before {
+        background-color: var(--color-dark);
+        -webkit-mask: url(../img/anonce_radio/dark/app-left.svg) no-repeat top left;
+        mask: url(../img/anonce_radio/dark/app-left.svg) no-repeat top left;
+        -webkit-mask-size: cover;
+        mask-size: cover;
+    }
+
+    .apps-item:nth-child(1) .apps-item-img {
+        background-color: var(--color-dark);
+        -webkit-mask: url(../img/anonce_radio/dark/tv.svg) no-repeat center center;
+        mask: url(../img/anonce_radio/dark/tv.svg) no-repeat center center;
+    }
+
+    .apps-item:nth-child(2) .apps-item-img {
+        background-color: var(--color-dark);
+        -webkit-mask: url(../img/anonce_radio/dark/phone.svg) no-repeat center center;
+        mask: url(../img/anonce_radio/dark/phone.svg) no-repeat center center;
+    }
+
+    .apps-item:nth-child(3) .apps-item-img {
+        background-color: var(--color-dark);
+        -webkit-mask: url(../img/anonce_radio/dark/radio.svg) no-repeat center center;
+        mask: url(../img/anonce_radio/dark/radio.svg) no-repeat center center;
+    }
+
+    .apps-item:nth-child(4) .apps-item-img {
+        background-color: var(--color-dark);
+        -webkit-mask: url(../img/anonce_radio/dark/auto.svg) no-repeat center center;
+        mask: url(../img/anonce_radio/dark/auto.svg) no-repeat center center;
+    }
+
+}
