@@ -97,6 +97,22 @@
     transform: scaleX(-1);
 }
 
+@media (max-width: 1080px) {
+
+    .block-title {
+        font-size: 69px;
+    }
+
+}
+
+@media (max-width: 650px) {
+
+    .block-title {
+        font-size: 32px;
+    }
+
+}
+
 @media screen and (prefers-color-scheme: dark) {
 
     .block-title span::after {
