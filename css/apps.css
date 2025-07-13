@@ -115,6 +115,206 @@
     .apps-block {
         grid-template-columns: repeat(1, 1fr);
         gap: 70px;
+        padding: 0 10px;
+    }
+
+    .apps-item {
+        min-height: 623px;
+        padding: 46px 15px;
+        position: relative;
+    }
+
+    .apps-item-img {
+        height: 200px;
+        margin-bottom: 39px;
+    }
+
+    .apps-item-title {
+        font-size: 37px;
+        line-height: 42px;
+        margin-bottom: 13px;
+    }
+
+    .apps-item-text {
+        font-size: 32.45px;
+        line-height: 1;
+    }
+
+    .apps-item::before,
+    .apps-item::after {
+        display: none;
+    }
+
+    .mob-bg-top {
+        position: absolute;
+        top: 0;
+        left: 45px;
+        right: 46px;
+        height: 1px;
+        background-color: var(--color-light);
+        -webkit-mask: url(../img/anonce_radio/light/border-tb.svg) no-repeat center center;
+        mask: url(../img/anonce_radio/light/border-tb.svg) no-repeat center center;
+        -webkit-mask-size: cover;
+        mask-size: cover;
+    }
+
+    .mob-bg-left {
+        position: absolute;
+        top: 46px;
+        left: 0;
+        bottom: 46px;
+        width: 1px;
+        background-color: var(--color-light);
+        -webkit-mask: url(../img/anonce_radio/light/border-side.svg) no-repeat center center;
+        mask: url(../img/anonce_radio/light/border-side.svg) no-repeat center center;
+        -webkit-mask-size: cover;
+        mask-size: cover;
+    }
+
+    .mob-bg-right {
+        position: absolute;
+        top: 46px;
+        right: 0;
+        bottom: 46px;
+        width: 1px;
+        background-color: var(--color-light);
+        -webkit-mask: url(../img/anonce_radio/light/border-side.svg) no-repeat center center;
+        mask: url(../img/anonce_radio/light/border-side.svg) no-repeat center center;
+        -webkit-mask-size: cover;
+        mask-size: cover;
+    }
+
+    .mob-bg-bottom {
+        position: absolute;
+        bottom: 0;
+        left: 46px;
+        right: 45px;
+        height: 1px;
+        background-color: var(--color-light);
+        -webkit-mask: url(../img/anonce_radio/light/border-tb.svg) no-repeat center center;
+        mask: url(../img/anonce_radio/light/border-tb.svg) no-repeat center center;
+        -webkit-mask-size: cover;
+        mask-size: cover;
+    }
+
+    .mob-bg-bottom-left {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 46px;
+        height: 46px;
+        background-color: var(--color-light);
+        -webkit-mask: url(../img/anonce_radio/light/app-corner.svg) no-repeat center center;
+        mask: url(../img/anonce_radio/light/app-corner.svg) no-repeat center center;
+        -webkit-mask-size: cover;
+        mask-size: cover;
+    }
+
+    .mob-bg-bottom-right {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        width: 46px;
+        height: 46px;
+        background-color: var(--color-light);
+        -webkit-mask: url(../img/anonce_radio/light/app-corner.svg) no-repeat center center;
+        mask: url(../img/anonce_radio/light/app-corner.svg) no-repeat center center;
+        -webkit-mask-size: cover;
+        mask-size: cover;
+        transform: scaleX(-1);
+    }
+
+    .mob-bg-up-right {
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 46px;
+        height: 46px;
+        background-color: var(--color-light);
+        -webkit-mask: url(../img/anonce_radio/light/app-corner.svg) no-repeat center center;
+        mask: url(../img/anonce_radio/light/app-corner.svg) no-repeat center center;
+        -webkit-mask-size: cover;
+        mask-size: cover;
+    }
+
+    .mob-bg-up-left {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 46px;
+        height: 46px;
+        background-color: var(--color-light);
+        -webkit-mask: url(../img/anonce_radio/light/app-corner.svg) no-repeat center center;
+        mask: url(../img/anonce_radio/light/app-corner.svg) no-repeat center center;
+        -webkit-mask-size: cover;
+        mask-size: cover;
+        transform: scaleY(-1);
+    }
+
+    .mob-bg-line-left-bottom {
+        position: absolute;
+        bottom: 46px;
+        left: -10px;
+        height: 120px;
+        width: 1px;
+        background-color: var(--color-light);
+        -webkit-mask: url(../img/anonce_radio/light/border-tb.svg) no-repeat center center;
+        mask: url(../img/anonce_radio/light/border-tb.svg) no-repeat center center;
+        -webkit-mask-size: cover;
+        mask-size: cover;
+    }
+
+    .mob-bg-line-left-up {
+        position: absolute;
+        top: 46px;
+        left: -10px;
+        height: 120px;
+        width: 1px;
+        background-color: var(--color-light);
+        -webkit-mask: url(../img/anonce_radio/light/border-tb.svg) no-repeat center center;
+        mask: url(../img/anonce_radio/light/border-tb.svg) no-repeat center center;
+        -webkit-mask-size: cover;
+        mask-size: cover;
+    }
+
+    .mob-bg-line-right {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        right: -10px;
+        height: 265px;
+        width: 1px;
+        background-color: var(--color-light);
+        -webkit-mask: url(../img/anonce_radio/light/border-tb.svg) no-repeat center center;
+        mask: url(../img/anonce_radio/light/border-tb.svg) no-repeat center center;
+        -webkit-mask-size: cover;
+        mask-size: cover;
+    }
+
+    .black-corner-up {
+        position: absolute;
+        top: 6px;
+        right: 3px;
+        width: 29px;
+        height: 29px;
+        background-color: var(--color-light);
+        -webkit-mask: url(../img/anonce_radio/light/black-corner.svg) no-repeat center center;
+        mask: url(../img/anonce_radio/light/black-corner.svg) no-repeat center center;
+        -webkit-mask-size: cover;
+        mask-size: cover;
+    }
+
+    .black-corner-down {
+        position: absolute;
+        bottom: 18px;
+        left: 18px;
+        width: 29px;
+        height: 29px;
+        background-color: var(--color-light);
+        -webkit-mask: url(../img/anonce_radio/light/black-corner.svg) no-repeat center center;
+        mask: url(../img/anonce_radio/light/black-corner.svg) no-repeat center center;
+        -webkit-mask-size: cover;
+        mask-size: cover;
     }
 
 }
@@ -159,6 +359,107 @@
         background-color: var(--color-dark);
         -webkit-mask: url(../img/anonce_radio/dark/auto.svg) no-repeat center center;
         mask: url(../img/anonce_radio/dark/auto.svg) no-repeat center center;
+    }
+
+    .mob-bg-bottom-left {
+        background-color: var(--color-dark);
+        -webkit-mask: url(../img/anonce_radio/dark/app-corner.svg) no-repeat center center;
+        mask: url(../img/anonce_radio/dark/app-corner.svg) no-repeat center center;
+    }
+
+    .mob-bg-bottom-right {
+        background-color: var(--color-dark);
+        -webkit-mask: url(../img/anonce_radio/dark/app-corner.svg) no-repeat center center;
+        mask: url(../img/anonce_radio/dark/app-corner.svg) no-repeat center center;
+        -webkit-mask-size: cover;
+        mask-size: cover;
+        transform: scaleX(-1);
+    }
+
+    .mob-bg-up-right {
+        background-color: var(--color-dark);
+        -webkit-mask: url(../img/anonce_radio/dark/app-corner.svg) no-repeat center center;
+        mask: url(../img/anonce_radio/dark/app-corner.svg) no-repeat center center;
+        -webkit-mask-size: cover;
+        mask-size: cover;
+    }
+
+    .mob-bg-up-left {
+        background-color: var(--color-dark);
+        -webkit-mask: url(../img/anonce_radio/dark/app-corner.svg) no-repeat center center;
+        mask: url(../img/anonce_radio/dark/app-corner.svg) no-repeat center center;
+    }
+
+    .mob-bg-top {
+        background-color: var(--color-dark);
+        -webkit-mask: url(../img/anonce_radio/dark/border-tb.svg) no-repeat center center;
+        mask: url(../img/anonce_radio/dark/border-tb.svg) no-repeat center center;
+        -webkit-mask-size: cover;
+        mask-size: cover;
+    }
+
+    .mob-bg-left {
+        background-color: var(--color-dark);
+        -webkit-mask: url(../img/anonce_radio/dark/border-side.svg) no-repeat center center;
+        mask: url(../img/anonce_radio/dark/border-side.svg) no-repeat center center;
+        -webkit-mask-size: cover;
+        mask-size: cover;
+    }
+
+    .mob-bg-right {
+        background-color: var(--color-dark);
+        -webkit-mask: url(../img/anonce_radio/dark/border-side.svg) no-repeat center center;
+        mask: url(../img/anonce_radio/dark/border-side.svg) no-repeat center center;
+        -webkit-mask-size: cover;
+        mask-size: cover;
+    }
+
+    .mob-bg-bottom {
+        background-color: var(--color-dark);
+        -webkit-mask: url(../img/anonce_radio/dark/border-tb.svg) no-repeat center center;
+        mask: url(../img/anonce_radio/dark/border-tb.svg) no-repeat center center;
+        -webkit-mask-size: cover;
+        mask-size: cover;
+    }
+
+    .mob-bg-line-left-bottom {
+        background-color: var(--color-dark);
+        -webkit-mask: url(../img/anonce_radio/dark/border-tb.svg) no-repeat center center;
+        mask: url(../img/anonce_radio/dark/border-tb.svg) no-repeat center center;
+        -webkit-mask-size: cover;
+        mask-size: cover;
+    }
+
+    .mob-bg-line-left-up {
+        background-color: var(--color-dark);
+        -webkit-mask: url(../img/anonce_radio/dark/border-tb.svg) no-repeat center center;
+        mask: url(../img/anonce_radio/dark/border-tb.svg) no-repeat center center;
+        -webkit-mask-size: cover;
+        mask-size: cover;
+    }
+
+    .mob-bg-line-right {
+        background-color: var(--color-dark);
+        -webkit-mask: url(../img/anonce_radio/dark/border-tb.svg) no-repeat center center;
+        mask: url(../img/anonce_radio/dark/border-tb.svg) no-repeat center center;
+        -webkit-mask-size: cover;
+        mask-size: cover;
+    }
+
+    .black-corner-up {
+        background-color: var(--color-dark);
+        -webkit-mask: url(../img/anonce_radio/dark/black-corner.svg) no-repeat center center;
+        mask: url(../img/anonce_radio/dark/black-corner.svg) no-repeat center center;
+        -webkit-mask-size: cover;
+        mask-size: cover;
+    }
+
+    .black-corner-down {
+        background-color: var(--color-dark);
+        -webkit-mask: url(../img/anonce_radio/dark/black-corner.svg) no-repeat center center;
+        mask: url(../img/anonce_radio/dark/black-corner.svg) no-repeat center center;
+        -webkit-mask-size: cover;
+        mask-size: cover;
     }
 
 }
