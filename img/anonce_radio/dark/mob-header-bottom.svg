@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="_Слой_2" data-name="Слой 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 182 15">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #FBF501;
+      }
+    </style>
+  </defs>
+  <g id="_Слой_1-2" data-name="Слой 1">
+    <path class="cls-1" d="M0,0v4.59h62.92l10.03,10.03h108.73V0H0Z"/>
+    <polygon class="cls-1" points="181.68 0 181.68 14.62 72.95 14.62 62.92 4.59 0 4.59 0 0 181.68 0"/>
+  </g>
+</svg>

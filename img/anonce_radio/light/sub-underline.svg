@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="_Слой_2" data-name="Слой 2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 578 6">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+        stroke: url(#_Безымянный_градиент_87);
+        stroke-miterlimit: 10;
+        stroke-width: 6.27px;
+      }
+    </style>
+    <linearGradient id="_Безымянный_градиент_87" data-name="Безымянный градиент 87" x1="-2430.76" y1="498.97" x2="-1852.49" y2="498.97" gradientTransform="translate(2430.76 -495.84)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#1a1a1a" stop-opacity="0"/>
+      <stop offset=".04" stop-color="#1a1a1a" stop-opacity=".09"/>
+      <stop offset=".27" stop-color="#1a1a1a" stop-opacity=".55"/>
+      <stop offset=".51" stop-color="#1a1a1a" stop-opacity=".7"/>
+      <stop offset="1" stop-color="#1a1a1a" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+  <g id="_Слой_1-2" data-name="Слой 1">
+    <g id="_выбрать_жанр" data-name="выбрать жанр">
+      <line class="cls-1" x1="0" y1="3.13" x2="578.27" y2="3.13"/>
+    </g>
+  </g>
+</svg>

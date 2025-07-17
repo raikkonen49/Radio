@@ -46,61 +46,139 @@
 
 .middle-line-block {
     width: 100%;
-    height: 38.53px;
+    height: 22px;
     margin-bottom: 62px;
     display: flex;
 }
 
 .middle-line-left {
     height: 100%;
-    width: 320.32px;
-    background-color: var(--color-light);
-    -webkit-mask: url(../img/anonce_radio/light/middle-side.svg) no-repeat center center;
-    mask: url(../img/anonce_radio/light/middle-side.svg) no-repeat center center;
-    -webkit-mask-size: cover;
-    mask-size: cover;
-}
-
-.middle-line {
-    height: 6.45px;
-    width: calc(50% - 320.32px - 53px);
-    background-color: var(--color-light);
-    -webkit-mask: url(../img/anonce_radio/light/middle.svg) no-repeat center left;
-    mask: url(../img/anonce_radio/light/middle.svg) no-repeat center left;
-    -webkit-mask-size: cover;
-    mask-size: cover;
-    margin-top: 16px;
-}
-
-.middle-line.side-right {
-    width: calc(50% - 320.32px - 53px);
-    transform: scaleX(-1);
-}
-
-.middle-item {
-    margin-top: 2px;
-    width: 110px;
-    height: 32.1328px;
-    background-color: var(--color-light);
-    -webkit-mask: url(../img/anonce_radio/light/middle-box.svg) no-repeat center center;
-    mask: url(../img/anonce_radio/light/middle-box.svg) no-repeat center center;
-}
-
-.middle-line-right {
-    height: 100%;
-    width: 320.32px;
+    width: 182.76px;
     background-color: var(--color-light);
     -webkit-mask: url(../img/anonce_radio/light/middle-side.svg) no-repeat center left;
     mask: url(../img/anonce_radio/light/middle-side.svg) no-repeat center left;
     -webkit-mask-size: cover;
     mask-size: cover;
+}
+
+.middle-line {
+    width: calc(50% - 182px - 31px);
+    background-color: var(--color-light);
+    -webkit-mask: url(../img/anonce_radio/light/middle.svg) no-repeat center left;
+    mask: url(../img/anonce_radio/light/middle.svg) no-repeat center left;
+    -webkit-mask-size: cover;
+    mask-size: cover;
+    height: 3px;
+    margin-top: 9px;
+}
+
+.middle-line.side-right {
+    width: calc(50% - 182.76px - 31px);
     transform: scaleX(-1);
+}
+
+.middle-item {
+    background-color: var(--color-light);
+    -webkit-mask: url(../img/anonce_radio/light/middle-box.svg) no-repeat center center;
+    mask: url(../img/anonce_radio/light/middle-box.svg) no-repeat center center;
+    width: 62px;
+    height: 19px;
+    -webkit-mask-size: contain;
+    mask-size: contain;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.middle-line-right {
+    height: 100%;
+    width: 182.76px;
+    background-color: var(--color-light);
+    -webkit-mask: url(../img/anonce_radio/light/middle-side.svg) no-repeat center right;
+    mask: url(../img/anonce_radio/light/middle-side.svg) no-repeat center right;
+    -webkit-mask-size: cover;
+    mask-size: cover;
+    transform: scaleX(-1);
+}
+
+.header-down-line.mob {
+    display: none;
+}
+
+.page-bottom {
+    width: 100%;
+    height: 36px;
+    display: none;
+    align-items: flex-end;
+    margin-top: 23px;
+}
+
+.page-bottom-left {
+    width: 203px;
+    height: 36px;
+    background-color: var(--color-light);
+    -webkit-mask: url(../img/anonce_radio/light/page-bottom-right.svg) repeat center center;
+    mask: url(../img/anonce_radio/light/page-bottom-right.svg) repeat center center;
+    -webkit-mask-size: cover;
+    mask-size: cover;
+    transform: scaleX(-1);
+}
+
+.page-bottom-center {
+    width: calc(100% - 406px);
+    height: 4px;
+    background-color: var(--color-light);
+    -webkit-mask: url(../img/anonce_radio/light/mob-header-top.svg) repeat center center;
+    mask: url(../img/anonce_radio/light/mob-header-top.svg) repeat center center;
+    -webkit-mask-size: cover;
+    mask-size: cover;
+}
+
+.page-bottom-right {
+    width: 203px;
+    height: 36px;
+    background-color: var(--color-light);
+    -webkit-mask: url(../img/anonce_radio/light/page-bottom-right.svg) repeat center center;
+    mask: url(../img/anonce_radio/light/page-bottom-right.svg) repeat center center;
+    -webkit-mask-size: cover;
+    mask-size: cover;
 }
 
 @media (max-width: 1080px) {
 
     .block-title {
-        font-size: 69px;
+        font-size: 32px;
+    }
+
+    .block-title span {
+        position: relative;
+        padding: 0 50px
+    }
+
+    .block-title span::before, .block-title span::after {
+        width: 34px;
+        height: 21.82px;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+
+    .block-title span::before {
+        transform: translateY(-50%) scaleX(-1) !important;
+    }
+
+    .header-down-line.mob {
+        display: flex;
+        padding: 0 35px;
+        margin-bottom: 130px;
+    }
+
+    .header-down-line.down {
+        margin-bottom: 0;
+        transform: scaleY(-1);
+    }
+
+    .page-bottom {
+        display: flex;
     }
 
 }
@@ -111,9 +189,28 @@
         font-size: 32px;
     }
 
+    .block-title span {
+        padding: 0 50px
+    }
+
+    .block-title span::before, .block-title span::after {
+        width: 34px;
+        height: 21.82px;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+
+    .block-title span::before {
+        transform: translateY(-50%) scaleX(-1) !important;
+    }
+
 }
 
 @media screen and (prefers-color-scheme: dark) {
+
+    .block-title {
+        color: var(--color-dark);
+    }
 
     .block-title span::after {
         background-color: var(--color-dark);
@@ -158,6 +255,30 @@
         background-color: var(--color-dark);
         -webkit-mask: url(../img/anonce_radio/dark/middle-side.svg) no-repeat center left;
         mask: url(../img/anonce_radio/dark/middle-side.svg) no-repeat center left;
+        -webkit-mask-size: cover;
+        mask-size: cover;
+    }
+
+    .page-bottom-left {
+        background-color: var(--color-dark);
+        -webkit-mask: url(../img/anonce_radio/dark/page-bottom-right.svg) repeat center center;
+        mask: url(../img/anonce_radio/dark/page-bottom-right.svg) repeat center center;
+        -webkit-mask-size: cover;
+        mask-size: cover;
+    }
+
+    .page-bottom-center {
+        background-color: var(--color-dark);
+        -webkit-mask: url(../img/anonce_radio/dark/mob-header-top.svg) repeat center center;
+        mask: url(../img/anonce_radio/dark/mob-header-top.svg) repeat center center;
+        -webkit-mask-size: cover;
+        mask-size: cover;
+    }
+
+    .page-bottom-right {
+        background-color: var(--color-dark);
+        -webkit-mask: url(../img/anonce_radio/dark/page-bottom-right.svg) repeat center center;
+        mask: url(../img/anonce_radio/dark/page-bottom-right.svg) repeat center center;
         -webkit-mask-size: cover;
         mask-size: cover;
     }

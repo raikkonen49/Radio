@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="_Слой_2" data-name="Слой 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 868 24">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #FBF501;
+      }
+    </style>
+  </defs>
+  <g id="_Слой_1-2" data-name="Слой 1">
+    <g id="_МЕНЮ" data-name="МЕНЮ">
+      <g>
+        <polygon class="cls-1" points="744.98 0 724.4 20.57 724.4 24.12 729.35 24.12 753.47 0 744.98 0"/>
+        <polygon class="cls-1" points="724.4 12.17 736.58 0 728.57 0 728.09 0 0 0 0 5.1 724.4 5.1 724.4 12.17"/>
+        <polygon class="cls-1" points="761.92 0 737.81 24.12 746.29 24.12 770.41 0 761.92 0"/>
+        <polygon class="cls-1" points="778.76 0 754.64 24.12 763.13 24.12 787.24 0 778.76 0"/>
+        <polygon class="cls-1" points="795.7 0 771.58 24.12 780.07 24.12 804.19 0 795.7 0"/>
+        <polygon class="cls-1" points="812.71 0 788.59 24.12 797.08 24.12 821.2 0 812.71 0"/>
+        <polygon class="cls-1" points="829.66 0 805.54 24.12 814.03 24.12 838.15 0 829.66 0"/>
+        <polygon class="cls-1" points="846.49 0 822.37 24.12 830.86 24.12 854.98 0 846.49 0"/>
+        <polygon class="cls-1" points="839.32 24.12 847.81 24.12 868.25 3.68 868.25 0 863.44 0 839.32 24.12"/>
+        <polygon class="cls-1" points="864.7 24.12 868.25 20.57 868.25 12.08 856.21 24.12 864.7 24.12"/>
+      </g>
+    </g>
+  </g>
+</svg>

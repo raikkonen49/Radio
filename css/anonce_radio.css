@@ -276,7 +276,7 @@
     mask: url(../img/anonce_radio/light/left_up_up.svg) no-repeat center center;
     -webkit-mask-size: cover;
     mask-size: cover;
-    z-index: 300;
+    /* z-index: 300; */
     transition: 0.2s;
 }
 
@@ -398,7 +398,7 @@
 
 .song-name {
     width: calc(93.5% - 138px);
-    z-index: 100;
+    /* z-index: 100; */
     height: 75px;
     overflow: hidden;
 }
@@ -416,7 +416,7 @@
 
 .icons {
     display: flex;
-    z-index: 100;
+    /* z-index: 100; */
 }
 
 .icon-btn {
@@ -525,11 +525,7 @@
         border-color: var(--color-dark);
     }
 
-    .radio-name,
-    .meniu-item a,
-    .block-title,
-    .apps-item-title,
-    .apps-item-text {
+    .radio-name {
         color: var(--color-dark);
     }
 
