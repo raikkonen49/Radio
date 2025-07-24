@@ -70,7 +70,7 @@
     width: 57.21px;
     height: 20px;
     display: flex;
-    align-items: center;        /* по вертикали */
+    align-items: center;
     justify-content: center; 
     color: var(--color-dark);
     position: relative;
@@ -102,8 +102,6 @@
 
 .player-radio-info {
     color: var(--color-dark);
-    position: relative;
-    z-index: 5;
 }
 
 .player-radio-info::before {
@@ -119,6 +117,4 @@
 
 .player-song-info {
     color: var(--color-white);
-    position: relative;
-    z-index: 5;
 }
