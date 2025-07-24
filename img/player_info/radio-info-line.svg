@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="_Слой_2" data-name="Слой 2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 572 21">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+        stroke: url(#_Безымянный_градиент_61);
+        stroke-miterlimit: 10;
+        stroke-width: 1.42px;
+      }
+
+      .cls-2 {
+        fill: #f3e724;
+      }
+    </style>
+    <linearGradient id="_Безымянный_градиент_61" data-name="Безымянный градиент 61" x1="10.17" y1="15.62" x2="571.62" y2="15.62" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#f3e724"/>
+      <stop offset=".26" stop-color="#f3e724" stop-opacity=".99"/>
+      <stop offset=".4" stop-color="#f3e724" stop-opacity=".96"/>
+      <stop offset=".51" stop-color="#f3e724" stop-opacity=".9"/>
+      <stop offset=".61" stop-color="#f3e724" stop-opacity=".82"/>
+      <stop offset=".69" stop-color="#f3e724" stop-opacity=".72"/>
+      <stop offset=".77" stop-color="#f3e724" stop-opacity=".59"/>
+      <stop offset=".84" stop-color="#f3e724" stop-opacity=".44"/>
+      <stop offset=".91" stop-color="#f3e724" stop-opacity=".27"/>
+      <stop offset=".98" stop-color="#f3e724" stop-opacity=".08"/>
+      <stop offset="1" stop-color="#f3e724" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+  <g id="_Слой_1-2" data-name="Слой 1">
+    <g>
+      <g>
+        <rect class="cls-2" x="3.66" y="3.66" width="4.28" height="4.28"/>
+        <path class="cls-2" d="M7.28,4.32v2.96h-2.96v-2.96h2.96M7.94,3.66H3.66v4.28h4.28V3.66h0Z"/>
+      </g>
+      <path class="cls-2" d="M9.81,1.79v8.02H1.79V1.79h8.02M11.6,0H0v11.6h11.6V0h0Z"/>
+    </g>
+    <polyline class="cls-1" points="10.67 10.59 20.53 20.45 435.75 20.45 440.34 15.85 571.62 15.85"/>
+  </g>
+</svg>

@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg"
+     viewBox="0 0 187.34 6.51"
+     preserveAspectRatio="none"
+     style="width: 100%; height: 6; display: block;">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #f3e724;
+      }
+    </style>
+  </defs>
+  <g>
+    <path class="cls-1" d="M0,0v6.51h187.34V0H0Z"/>
+  </g>
+</svg>

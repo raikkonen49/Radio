@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg"
+     viewBox="0 0 6 66"
+     preserveAspectRatio="xMidYMin meet"
+     style="width: 6; height: 100%; display: block;">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #f3e724;
+      }
+    </style>
+  </defs>
+  <g id="_Слой_1-2" data-name="Слой 1">
+    <path class="cls-1" d="M0,0v65.56h6.51V0H0Z"/>
+  </g>
+</svg>

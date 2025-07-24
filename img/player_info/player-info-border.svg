@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="_Слой_2" data-name="Слой 2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 416 141">
+  <defs>
+    <style>
+      .cls-1 {
+        stroke: url(#_Безымянный_градиент_61);
+      }
+
+      .cls-1, .cls-2, .cls-3 {
+        fill: none;
+        stroke-miterlimit: 10;
+        stroke-width: 1.42px;
+      }
+
+      .cls-4 {
+        fill: #f3e724;
+      }
+
+      .cls-2 {
+        stroke: url(#_Безымянный_градиент_61-2);
+      }
+
+      .cls-3 {
+        stroke: url(#_Безымянный_градиент_61-3);
+      }
+    </style>
+    <linearGradient id="_Безымянный_градиент_61" data-name="Безымянный градиент 61" x1="10.24" y1="112.86" x2="336.67" y2="112.86" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#f3e724"/>
+      <stop offset=".26" stop-color="#f3e724" stop-opacity=".99"/>
+      <stop offset=".4" stop-color="#f3e724" stop-opacity=".96"/>
+      <stop offset=".51" stop-color="#f3e724" stop-opacity=".9"/>
+      <stop offset=".61" stop-color="#f3e724" stop-opacity=".82"/>
+      <stop offset=".69" stop-color="#f3e724" stop-opacity=".72"/>
+      <stop offset=".77" stop-color="#f3e724" stop-opacity=".59"/>
+      <stop offset=".84" stop-color="#f3e724" stop-opacity=".44"/>
+      <stop offset=".91" stop-color="#f3e724" stop-opacity=".27"/>
+      <stop offset=".98" stop-color="#f3e724" stop-opacity=".08"/>
+      <stop offset="1" stop-color="#f3e724" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="_Безымянный_градиент_61-2" data-name="Безымянный градиент 61" x1="10.24" y1="21.48" x2="415.79" y2="21.48" xlink:href="#_Безымянный_градиент_61"/>
+    <linearGradient id="_Безымянный_градиент_61-3" data-name="Безымянный градиент 61" x1="142.6" y1="28.33" x2="144.02" y2="28.33" xlink:href="#_Безымянный_градиент_61"/>
+  </defs>
+  <g id="_Слой_1-2" data-name="Слой 1">
+    <polygon class="cls-4" points="2.67 48.49 2.69 48.47 2.69 46.52 .95 44.75 .94 44.75 .94 30.28 0 31.15 0 44.75 0 78.51 0 92.1 .94 92.98 .94 78.51 .95 78.51 2.69 76.74 2.69 74.79 2.67 74.77 1.46 73.56 1.46 69.31 1.98 68.79 1.98 64.72 .95 63.69 .95 62.72 1.36 62.3 1.36 61.7 1.36 61.56 1.36 60.96 .95 60.54 .95 59.57 1.98 58.54 1.98 54.47 1.46 53.95 1.46 49.7 2.67 48.49"/>
+    <g>
+      <g>
+        <rect class="cls-4" x="3.67" y="23.56" width="4.28" height="4.28"/>
+        <path class="cls-4" d="M7.29,24.22v2.96h-2.96v-2.96h2.96ZM7.95,23.56H3.67v4.28h4.28v-4.28h0Z"/>
+      </g>
+      <path class="cls-4" d="M9.82,21.69v8.02H1.8v-8.02h8.02ZM11.61,19.9H0v11.6h11.6v-11.6h0Z"/>
+    </g>
+    <g>
+      <g>
+        <rect class="cls-4" x="3.67" y="95.56" width="4.28" height="4.28"/>
+        <path class="cls-4" d="M7.29,96.22v2.96h-2.96v-2.96h2.96ZM7.95,95.56H3.67v4.28h4.28v-4.28h0Z"/>
+      </g>
+      <path class="cls-4" d="M9.82,93.69v8.02H1.8v-8.02h8.02ZM11.61,91.9H0v11.6h11.6v-11.6h0Z"/>
+    </g>
+    <polyline class="cls-1" points="10.74 92.77 17.96 85.55 146.6 85.55 153.13 92.08 153.13 132.15 161.15 140.17 336.67 140.17"/>
+    <polyline class="cls-2" points="10.74 20.77 18.91 12.6 33.24 12.6 62.89 42.25 97.99 42.25 111.92 28.32 143.65 28.32 171.26 .71 415.79 .71"/>
+    <line class="cls-3" x1="143.31" y1="27.62" x2="143.31" y2="29.04"/>
+  </g>
+</svg>

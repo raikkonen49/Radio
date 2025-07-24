@@ -1,0 +1,215 @@
+.video-item-wrap {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+}
+
+.video-item {
+    position: relative;
+    display: flex;
+    flex-grow: 1;
+}
+
+.video-border-top-left {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 42px;
+    height: 132px;
+    background-size: cover !important;
+    background: url(../img/anonce_video/video-top-left.svg) no-repeat center center;
+    z-index: 1;
+}
+
+.video-border-bottom-left {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    top: 131px;
+    width: 6px;
+    background-size: cover !important;
+    background: url(../img/anonce_video/left.svg) no-repeat center center;
+    z-index: 1;
+}
+
+.video-border-bottom-left-r {
+    position: absolute;
+    left: 20px;
+    bottom: 0;
+    top: 131px;
+    width: 6px;
+    background-size: cover !important;
+    background: url(../img/anonce_video/left.svg) no-repeat center center;
+    z-index: 1;
+}
+
+.video-border-bottom {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    right: 35px;
+    height: 6px;
+    background-size: cover !important;
+    background: url(../img/anonce_video/bottom.svg) no-repeat center center;
+    z-index: 1;
+}
+
+.video-border-bottom-right-corner {
+    position: absolute;
+    bottom: 0;
+    right: 10px;
+    width: 25px;
+    height: 49px;
+    background-size: cover !important;
+    background: url(../img/anonce_video/bottom-right-corner.svg) no-repeat center center;
+    z-index: 1;
+}
+
+.video-border-inner-corner {
+    position: absolute;
+    bottom: 5px;
+    right: 0;
+    width: 141px;
+    height: 55px;
+    background-size: cover !important;
+    background: url(../img/anonce_video/inner-corner.svg) no-repeat center center;
+    z-index: 1;
+}
+
+.video-border-right {
+    position: absolute;
+    right: 0;
+    bottom: 55px;
+    top: 14px;
+    width: 6px;
+    background-size: cover !important;
+    background: url(../img/anonce_video/left.svg) no-repeat center center;
+    z-index: 1;
+}
+
+.video-border-top-right {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 165px;
+    height: 20px;
+    background-size: cover !important;
+    background: url(../img/anonce_video/top-right.svg) no-repeat center center;
+    z-index: 1;
+}
+
+.video-border-top-left-r {
+    position: absolute;
+    left: 41px;
+    top: 0;
+    width: 113px;
+    height: 20px;
+    background-size: cover !important;
+    background: url(../img/anonce_video/top-left.svg) no-repeat center center;
+    z-index: 1;
+}
+
+.video-border-top {
+    position: absolute;
+    left: 154px;
+    top: 14px;
+    right: 165px;
+    height: 6px;
+    background-size: cover !important;
+    background: url(../img/anonce_video/bottom.svg) no-repeat center center;
+    z-index: 1;
+}
+
+.video-item-img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    background-size: cover !important;
+    clip-path: polygon(100% calc(100% - 60px),
+            calc(100% - 40px) calc(100% - 25px),
+            calc(100% - 120px) calc(100% - 25px),
+            calc(100% - 135px) 100%,
+            22px 100%,
+            22px 25px,
+            40px 0%,
+            140px 0%,
+            155px 19px,
+            100% 19px);
+
+}
+
+.video-item-text {
+    width: 100%;
+    display: block;
+    position: relative;
+}
+
+.video-item-title {
+    font-size: 1em;
+    line-height: 20px;
+    color: var(--color-dark);
+    font-family: var(--header-font);
+    position: relative;
+}
+
+.video-item-title span {
+    display: block;
+    padding: 10px 25px 16px 25px;
+    position: relative;
+}
+
+.video-item-title span::after {
+    position: absolute;
+    content: '';
+    bottom: 6px;
+    right: 4px;
+    width: 17px;
+    height: 17px;
+    background: url(../img/anonce_video/video-item-title-corner.svg) no-repeat center center;
+    background-size: cover !important;
+}
+
+.video-item-title::before {
+    position: absolute;
+    content: '';
+    top: 10px;
+    left: 0;
+    bottom: 5px;
+    width: 2px;
+    background: url(../img/anonce_video/item-title-left.svg) no-repeat center center;
+    background-size: cover !important;
+}
+
+.video-item-title::after {
+    position: absolute;
+    content: '';
+    top: -35px;
+    right: 4px;
+    bottom: 23px;
+    width: 1px;
+    background: url(../img/anonce_video/item-title-right.svg) no-repeat center center;
+    background-size: cover !important;
+}
+
+.video-item-text::before {
+    position: absolute;
+    content: '';
+    left: 0;
+    bottom: 0;
+    width: 98px;
+    height: 8px;
+    background: url(../img/anonce_video/video-item-title-bottom.svg) no-repeat center center;
+    background-size: cover !important;
+}
+
+.video-item-text::after {
+    position: absolute;
+    content: '';
+    left: 0;
+    right: 20px;
+    bottom: 6px;
+    height: 2px;
+    background: url(../img/anonce_video/bottom.svg) no-repeat center center;
+    background-size: cover !important;
+}

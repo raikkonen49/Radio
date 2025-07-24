@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="_Слой_2" data-name="Слой 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 3 987" preserveAspectRatio="none">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: url(#_Безымянный_градиент_90);
+      }
+    </style>
+    <linearGradient id="_Безымянный_градиент_90" x1="1" y1="1" x2="0" y2="0" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#f3e724" stop-opacity="0"/>
+      <stop offset=".22" stop-color="#f3e724" stop-opacity=".2"/>
+      <stop offset=".72" stop-color="#f3e724" stop-opacity=".71"/>
+      <stop offset="1" stop-color="#f3e724"/>
+    </linearGradient>
+  </defs>
+  <g id="_Слой_1-2" data-name="Слой 1">
+    <polygon class="cls-1" points="0 2.85 0 2.85 0 986.77 2.8 986.77 2.8 0 0 0 0 2.85"/>
+  </g>
+</svg>

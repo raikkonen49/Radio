@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="_Слой_2" data-name="Слой 2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 296 57">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: url(#_Безымянный_градиент_88);
+      }
+
+      .cls-2 {
+        fill: url(#_Безымянный_градиент_90);
+      }
+    </style>
+    <linearGradient id="_Безымянный_градиент_88" data-name="Безымянный градиент 88" x1="802.4" y1="28.7" x2="2.83" y2="28.7" gradientUnits="userSpaceOnUse">
+<stop offset="1" stop-color="#010101"/>
+      <stop offset="0" stop-color="#010101" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="_Безымянный_градиент_90" data-name="Безымянный градиент 90" x1="701.37" y1="344.3" x2="26.26" y2="-45.48" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#f3e724" stop-opacity="0"/>
+      <stop offset=".22" stop-color="#f3e724" stop-opacity=".2"/>
+      <stop offset=".72" stop-color="#f3e724" stop-opacity=".71"/>
+      <stop offset="1" stop-color="#f3e724"/>
+    </linearGradient>
+  </defs>
+  <g id="_Слой_1-2" data-name="Слой 1">
+    <path class="cls-1" d="M295.98,2.83H2.83v39.89c4.62,4.62,7.21,7.21,11.83,11.83h281.32V2.83Z"/>
+    <path class="cls-2" d="M295.98,54.56H14.66c-4.62-4.62-7.21-7.21-11.83-11.83V2.83h293.14V0H0v43.9l.83.83,5.91,5.91,5.91,5.91.83.83h282.49v-2.83Z"/>
+  </g>
+</svg>

@@ -1,5 +1,7 @@
 @import "meniu.css";
 @import "apps.css";
+@import "history.css";
+@import "player_info/player_info.css";
 
 .block-title {
     font-size: 71px;
