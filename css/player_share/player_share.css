@@ -1,0 +1,23 @@
+.post-toolbar {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 72px;
+    height: 214.5px;
+    background-size: cover !important;
+	background: url(../../img/player_share/share-border.svg) no-repeat center center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 18px;
+    padding-right: 23px;
+    padding-top: 28px;
+}
+
+.post-toolbar-item {
+    cursor: pointer;
+}
+
+.post-toolbar-item img {
+    height: 23px;
+}

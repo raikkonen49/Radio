@@ -2,6 +2,7 @@
 @import "apps.css";
 @import "history.css";
 @import "player_info/player_info.css";
+@import "player_share/player_share.css";
 
 .block-title {
     font-size: 71px;
