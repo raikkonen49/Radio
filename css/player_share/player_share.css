@@ -9,7 +9,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 18px;
+    gap: 26px;
     padding-right: 23px;
     padding-top: 28px;
 }
@@ -18,6 +18,51 @@
     cursor: pointer;
 }
 
-.post-toolbar-item img {
+.post-toolbar-item.favorite {
+    width: 24.5px;
     height: 23px;
+    background-color: var(--color-dark);
+    -webkit-mask: url(../../img/player_share/favorite.svg) repeat left center;
+    mask: url(../../img/player_share/favorite.svg) repeat center center;
+    -webkit-mask-size: contain;
+    mask-size: contain;
+    transition: 0.2s;
 }
+
+.post-toolbar-item.like {
+    width: 26.07px;
+    height: 23px;
+    background-color: var(--color-dark);
+    -webkit-mask: url(../../img/player_share/like.svg) repeat left center;
+    mask: url(../../img/player_share/like.svg) repeat center center;
+    -webkit-mask-size: contain;
+    mask-size: contain;
+    transition: 0.2s;
+}
+
+.post-toolbar-item.unlike {
+    width: 25.56px;
+    height: 23px;
+    background-color: var(--color-dark);
+    -webkit-mask: url(../../img/player_share/unlike.svg) repeat left center;
+    mask: url(../../img/player_share/unlike.svg) repeat center center;
+    -webkit-mask-size: contain;
+    mask-size: contain;
+    transition: 0.2s;
+}
+
+.post-toolbar-item.share {
+    width: 23.48px;
+    height: 23px;
+    background-color: var(--color-dark);
+    -webkit-mask: url(../../img/player_share/share.svg) repeat left center;
+    mask: url(../../img/player_share/share.svg) repeat center center;
+    -webkit-mask-size: contain;
+    mask-size: contain;
+    transition: 0.2s;
+}
+
+.post-toolbar-item.favorite:hover, .post-toolbar-item.like:hover, .post-toolbar-item.unlike:hover, .post-toolbar-item.share:hover {
+    background-color: var(--color-hover);
+}
+
