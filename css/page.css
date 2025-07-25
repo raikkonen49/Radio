@@ -1,6 +1,7 @@
 @import "meniu.css";
 @import "apps.css";
-@import "history.css";
+@import "player_pause_menu/player_pause_menu.css";
+@import "anonce_video.css";
 @import "player_info/player_info.css";
 @import "player_share/player_share.css";
 
