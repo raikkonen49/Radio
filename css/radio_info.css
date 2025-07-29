@@ -1,0 +1,30 @@
+.description-row {
+    max-width: 1770px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.description-container {
+    margin: 40px 0;
+    display: block;
+}
+
+.description-block {
+    display: block;
+    font-family: var(--main-font);
+    font-weight: 400;
+    font-size: 22.68px;
+    line-height: 25px;
+    color: var(--color-light);
+    padding: 80px 70px;
+}
+
+.description-block p {
+    padding-top: 15px;
+}
+
+.description-block img {
+    float: left;
+    margin-right: 35px;
+    margin-bottom: 30px;
+}

@@ -207,26 +207,6 @@
 }
 
 
-
-
-
-/* .header-down-line-center {
-        width: 89px;
-        height: 11px;
-    }
-
-    .header-down-line-left, .header-down-line-right {
-        width: calc(50% - 44.5px);
-        height: 11px;
-        -webkit-mask-size: cover;
-        mask-size: cover;
-        height: 6px;
-    } */
-
-
-
-
-
 .header.down .sub-meniu {
     transform: scaleY(-1);
     top: auto;
@@ -314,8 +294,8 @@
     text-align: center;
     position: relative;
     z-index: 100;
-    top: 50%;
-    transform: translateY(-50%);
+    /* top: 50%;
+    transform: translateY(-50%); */
     padding-bottom: 20px;
 }
 

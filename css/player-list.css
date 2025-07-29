@@ -1,0 +1,95 @@
+.player-list-container {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.player-list-wrap {
+    display: flex;
+    justify-content: center; 
+    align-items: center;   
+    height: 100%;        
+    width: 100%;
+}
+
+.player-list-block {
+    display: flex;
+    flex-direction: row;  
+    justify-content: center; 
+    align-items: center;      
+}
+
+.player-list-block .station_item:nth-child(3n + 2) {
+    margin-right: 0;
+}
+
+.player-list-block .station_item {
+        width: calc((100% - 6.286% ) / 2);
+}
+
+.player-list-block .frame-side-up-left,
+.player-list-block .frame-side-up,
+.player-list-block .frame-side-up-right,
+.player-list-block .frame-side-right,
+.player-list-block .frame-side-right-bottom,
+.player-list-block .frame-side-bottom-right,
+.player-list-block .frame-side-bottom,
+.player-list-block .frame-side-bottom-left,
+.player-list-block .frame-side-left,
+.player-list-block .block-logo-bg,
+.player-list-block .favorites,
+.player-list-block .line,
+.player-list-block .line-side,
+.player-list-block .heart-center,
+.player-list-block .share,
+.player-list-block .block-logo::before,
+.player-list-block .radio-item-circle div,
+.player-list-block .radio-item::after,
+.header-down-line.pl .header-down-line-left,
+.header-down-line.pl .header-down-line-center,
+.header-down-line.pl .header-down-line-right {
+    background-color: var(--color-dark);
+}
+
+.player-list-block .radio-name {
+    color: var(--color-dark);
+}
+
+.player-list-block .song-name-text {
+    color: var(--color-white);
+}
+
+.station_item:hover .frame-side-up-left, .station_item:hover .frame-side-up, .station_item:hover .frame-side-up-right, .station_item:hover .frame-side-right, .station_item:hover .frame-side-right-bottom, .station_item:hover .frame-side-bottom-right, .station_item:hover .frame-side-bottom, .station_item:hover .frame-side-bottom-left, .station_item:hover .frame-side-left {
+    background-color: var(--color-hover);
+}
+
+.header-down-line.pl  {
+    position: absolute;
+    left: 40px;
+    right: 40px;
+    margin-top: 75px;
+    z-index: 10;
+}
+
+.header-down-line.pl.plb {
+    bottom: 75px;
+    margin-top: 0;
+    transform: scaleY(-1);
+}
+
+.player-list-line {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 35px;
+    background-color: var(--color-dark);
+    -webkit-mask: url(../img/player-list/player-list.svg) no-repeat left center;
+    mask: url(../img/player-list/player-list.svg) no-repeat left center;
+    -webkit-mask-size: contain;
+    mask-size: contain;
+}
+
+
+
+

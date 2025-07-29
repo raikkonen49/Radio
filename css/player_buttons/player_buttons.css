@@ -1,0 +1,288 @@
+.player_buttons-wrap {
+    padding: 50px;
+    width: 100%;
+    height: 100%;
+}
+
+.player_buttons-container {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.player_buttons-border {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.player_buttons-border-top-left {
+    position: absolute;
+    top: 6px;
+    left: 0;
+    width: 562px;
+    height: 407px;
+    background-color: var(--color-light);
+    -webkit-mask: url(../../img/player_buttons/light/pa_top-left.svg) no-repeat left center;
+    mask: url(../../img/player_buttons/light/pa_top-left.svg) no-repeat center center;
+    -webkit-mask-size: contain;
+    mask-size: contain;
+}
+
+.player_buttons-border-left {
+    position: absolute;
+    top: 411px;
+    bottom: 418px;
+    left: 0;
+    width: 4px;
+    background-color: var(--color-light);
+    -webkit-mask: url(../../img/player_buttons/light/pa_left.svg) repeat center center;
+    mask: url(../../img/player_buttons/light/pa_left.svg) repeat center center;
+    -webkit-mask-size: auto;
+    mask-size: auto;
+}
+
+.player_buttons-border-left-r {
+    position: absolute;
+    top: 411px;
+    bottom: 418px;
+    left: 26px;
+    width: 4px;
+    background-color: var(--color-light);
+    -webkit-mask: url(../../img/player_buttons/light/pa_left.svg) repeat center center;
+    mask: url(../../img/player_buttons/light/pa_left.svg) repeat center center;
+    -webkit-mask-size: auto;
+    mask-size: auto;
+}
+
+.player_buttons-border-bottom-left {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 91px;
+    height: 419px;
+    background-color: var(--color-light);
+    -webkit-mask: url(../../img/player_buttons/light/pa_bottom-left.svg) no-repeat center center;
+    mask: url(../../img/player_buttons/light/pa_bottom-left.svg) no-repeat center center;
+    -webkit-mask-size: contain;
+    mask-size: contain;
+}
+
+
+.player_buttons-border-top-right {
+    position: absolute;
+    top: 6px;
+    right: 0;
+    width: 562px;
+    height: 407px;
+    background-color: var(--color-light);
+    -webkit-mask: url(../../img/player_buttons/light/pa_top-left.svg) no-repeat left center;
+    mask: url(../../img/player_buttons/light/pa_top-left.svg) no-repeat center center;
+    -webkit-mask-size: contain;
+    mask-size: contain;
+    transform: scaleX(-1);
+}
+
+.player_buttons-border-right {
+    position: absolute;
+    top: 411px;
+    bottom: 418px;
+    right: 0;
+    width: 4px;
+    background-color: var(--color-light);
+    -webkit-mask: url(../../img/player_buttons/light/pa_left.svg) repeat center center;
+    mask: url(../../img/player_buttons/light/pa_left.svg) repeat center center;
+    -webkit-mask-size: auto;
+    mask-size: auto;
+}
+
+.player_buttons-border-right-l {
+    position: absolute;
+    top: 411px;
+    bottom: 418px;
+    right: 26px;
+    width: 4px;
+    background-color: var(--color-light);
+    -webkit-mask: url(../../img/player_buttons/light/pa_left.svg) repeat center center;
+    mask: url(../../img/player_buttons/light/pa_left.svg) repeat center center;
+    -webkit-mask-size: auto;
+    mask-size: auto;
+}
+
+.player_buttons-border-bottom-right {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 91px;
+    height: 419px;
+    background-color: var(--color-light);
+    -webkit-mask: url(../../img/player_buttons/light/pa_bottom-left.svg) no-repeat center center;
+    mask: url(../../img/player_buttons/light/pa_bottom-left.svg) no-repeat center center;
+    -webkit-mask-size: contain;
+    mask-size: contain;
+    transform: scaleX(-1);
+}
+
+.player_buttons-border-bottom {
+    position: absolute;
+    bottom: 0;
+    left: 61px;
+    right: 60px;
+    height: 4px;
+    background-color: var(--color-light);
+    -webkit-mask: url(../../img/player_buttons/light/pa_bottom.svg) repeat center center;
+    mask: url(../../img/player_buttons/light/pa_bottom.svg) repeat center center;
+    -webkit-mask-size: cover;
+    mask-size: cover;
+}
+
+.player_buttons-border-bottom-t {
+    position: absolute;
+    bottom: 6px;
+    left: 85px;
+    right: 85px;
+    height: 4px;
+    background-color: var(--color-light);
+    -webkit-mask: url(../../img/player_buttons/light/pa_bottom.svg) repeat center center;
+    mask: url(../../img/player_buttons/light/pa_bottom.svg) repeat center center;
+    -webkit-mask-size: cover;
+    mask-size: cover;
+}
+
+.player_buttons-border-top {
+    position: absolute;
+    top: 18px;
+    left: 562px;
+    right: 562px;
+    height: 4px;
+    background-color: var(--color-light);
+    -webkit-mask: url(../../img/player_buttons/light/pa_bottom.svg) no-repeat left center;
+    mask: url(../../img/player_buttons/light/pa_bottom.svg) no-repeat left center;
+    -webkit-mask-size: cover;
+    mask-size: cover;
+}
+
+.player_buttons-border-top-b {
+    position: absolute;
+    top: 40px;
+    left: 562px;
+    right: 562px;
+    height: 4px;
+    background-color: var(--color-light);
+    -webkit-mask: url(../../img/player_buttons/light/pa_bottom.svg) repeat center center;
+    mask: url(../../img/player_buttons/light/pa_bottom.svg) repeat center center;
+    -webkit-mask-size: cover !important;
+    mask-size: cover !important;
+}
+
+.player-apps-block-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.player-apps-block {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 50px;
+    position: relative;
+    z-index: 10;
+}
+
+.player-apps-item {
+    min-height: 120px;
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 10px;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+    font-size: 1em;
+    font-weight: 700;
+    color: var(--color-light);
+    line-height: 20px;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.player-apps-item:hover {
+    color: var(--color-hover);
+}
+
+.player-apps-item .player-apps-item-img {
+    width: 100%;
+    height: 75px;
+    margin-bottom: 10px;
+}
+
+
+.player-apps-item:nth-child(1) .player-apps-item-img {
+    background-color: var(--color-light);
+    -webkit-mask: url(../../img/anonce_radio/light/tv.svg) no-repeat center center;
+    mask: url(../../img/anonce_radio/light/tv.svg) no-repeat center center;
+}
+
+.player-apps-item:nth-child(2) .player-apps-item-img {
+    background-color: var(--color-light);
+    -webkit-mask: url(../../img/anonce_radio/light/phone.svg) no-repeat center center;
+    mask: url(../../img/anonce_radio/light/phone.svg) no-repeat center center;
+}
+
+.player-apps-item:nth-child(3) .player-apps-item-img {
+    background-color: var(--color-light);
+    -webkit-mask: url(../img/anonce_radio/light/radio.svg) no-repeat center center;
+    mask: url(../../img/anonce_radio/light/radio.svg) no-repeat center center;
+}
+
+.player-apps-item:nth-child(4) .player-apps-item-img {
+    background-color: var(--color-light);
+    -webkit-mask: url(../../img/anonce_radio/light/auto.svg) no-repeat center center;
+    mask: url(../../img/anonce_radio/light/auto.svg) no-repeat center center;
+}
+
+.player_buttons-container .header-down-line {
+    position: absolute;
+    left: 40px;
+    right: 40px;
+    margin-top: 75px;
+    z-index: 10;
+}
+
+.header-down-line.pb {
+    bottom: 75px;
+    margin-top: 0;
+    transform: scaleY(-1);
+}
+
+@media screen and (prefers-color-scheme: dark) {
+
+    .player_buttons-border-top-left,
+    .player_buttons-border-left,
+    .player_buttons-border-left-r,
+    .player_buttons-border-bottom-left,
+    .player_buttons-border-top-right,
+    .player_buttons-border-right-l,
+    .player_buttons-border-bottom-right,
+    .player_buttons-border-bottom-t,
+    .player_buttons-border-bottom,
+    .player_buttons-border-top,
+    .player_buttons-border-top-b,
+    .player-apps-item .player-apps-item-img {
+        background-color: var(--color-dark) !important;
+    }
+
+    .player-apps-item {
+        color: var(--color-dark);
+    }
+
+    .player-apps-item:hover {
+        color: var(--color-white);
+    }
+
+}
