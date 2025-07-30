@@ -54,40 +54,59 @@
   display: flex;
   align-items: flex-start;
   justify-content: space-between;
-  gap: 20px;
 }
 
 /* Заголовок слева */
+
+.form-title-wrap {
+    flex: 0 0 490px;
+    height: 179px;
+    padding: 25px 40px 0 40px;
+  background-color: var(--color-light);
+    -webkit-mask: url(../img/popup/title-bg.svg) no-repeat center center;
+    mask: url(../img/popup/title-bg.svg) no-repeat center center;
+    -webkit-mask-size: contain;
+    mask-size: contain;
+}
+
 .form-title {
-  flex: 0 0 260px;
-  margin: 0;
-  font-size: 22px;
-  font-weight: 700;
-  color: var(--color-light);
-  line-height: 1.2;
+  font-size: 28px;
+  font-weight: 400;
+  color: var(--color-white);
+  line-height: 1;
+  font-family: var(--header-font);
+  word-spacing: -15px;
 }
 
 /* Текст по центру, мелкий шрифт */
 .form-description {
   flex: 1;
-  font-size: 13px;
-  color: #555;
-  line-height: 1.5;
+  font-size: 11px;
+  font-weight: 400;
+  color: var(--color-light);
+  line-height: 13px;
   margin: 0;
   user-select: text;
+  font-family: var(--main-font) !important;
+  padding-top: 10px;
+  text-align: justify;
+  padding-right: 30px;
+}
+
+.form-description strong {
+    font-weight: 700;
+    font-family: var(--header-font);
 }
 
 /* Крестик справа */
 .close-btn {
-  font-size: 28px;
-  background: none;
+width: 61px;
+    height: 61px;
+  background: url(../img/popup/cross.svg) no-repeat center center;
+    background-size: contain !important;
   border: none;
   cursor: pointer;
-  color: #999;
   padding: 0;
-  line-height: 1;
-  transition: color 0.3s ease;
-  flex-shrink: 0;
 }
 
 .close-btn:hover {
@@ -99,7 +118,8 @@
   display: flex;
   flex-direction: column;
   gap: 15px;
-  margin-top: 10px;
+  margin-top: -77px;
+  padding: 0 60px 0 60px;
 }
 
 /* Обёртка для полей - позиционирование для звёздочки */
@@ -179,6 +199,7 @@ textarea {
   margin-top: 20px;
   gap: 15px;
   flex-wrap: nowrap;
+  padding-left: 60px;
 }
 
 /* Левая часть — чекбокс */
