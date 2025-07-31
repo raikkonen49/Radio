@@ -194,7 +194,8 @@
                         <h2 class="form-title">Добавить ваше радио в каталог радиостанций</h2>
                     </div>
                     <p class="form-description">
-                        <strong>Если вы владелец радиостанции</strong> и вы хотите добавить ваше радио в каталог. Вам нужно знать
+                        <strong>Если вы владелец радиостанции</strong> и вы хотите добавить ваше радио в каталог. Вам
+                        нужно знать
                         следующее:<br />
                         Заполните форму, наши специалисты начнут проверять возможность подключения. После проверки, мы
                         пришлем вам
@@ -211,26 +212,45 @@
 
                         <div class="field-wrapper">
                             <input type="text" name="name" placeholder="Введите ваше ФИО" required />
+                            <div class="field-border"></div>
+                            <div class="field-border-error"></div>
+                            <div class="field-border-error-bg"></div>
                         </div>
 
                         <div class="field-wrapper">
                             <input type="text" name="phone" placeholder="Введите телефон" required />
+                            <div class="field-border"></div>
+                            <div class="field-border-error"></div>
+                            <div class="field-border-error-bg"></div>
                         </div>
 
                         <div class="field-wrapper">
                             <input type="email" name="email" placeholder="Введите email" required />
+                            <div class="field-border"></div>
+                            <div class="field-border-error"></div>
+                            <div class="field-border-error-bg"></div>
                         </div>
 
                         <div class="field-wrapper">
                             <input type="text" name="website" placeholder="Введите адрес сайта радио" required />
+                            <div class="field-border"></div>
+                            <div class="field-border-error"></div>
+                            <div class="field-border-error-bg"></div>
                         </div>
 
                         <div class="field-wrapper">
-                            <input type="text" name="stream" placeholder="Введите адрес аудио потока который будем использовать" required />
+                            <input type="text" name="stream"
+                                placeholder="Введите адрес аудио потока который будем использовать" required />
+                            <div class="field-border"></div>
+                            <div class="field-border-error"></div>
+                            <div class="field-border-error-bg"></div>
                         </div>
 
                         <div class="field-wrapper">
                             <textarea name="message" placeholder="Ваше сообщение" required></textarea>
+                            <div class="field-border-text"></div>
+                            <div class="field-border-text-error"></div>
+                            <div class="field-border-text-error-bg"></div>
                         </div>
                     </div>
 
@@ -238,16 +258,25 @@
                     <div class="form-footer">
                         <label class="checkbox-label">
                             <input type="checkbox" name="agreement" required>
+                            <span class="checkbox-custom"></span>
                             Согласен с условиями
                         </label>
 
                         <div class="form-footer-right">
                             <span class="error-text hidden">*Обязательное поле для заполнения</span>
                             <span class="success-text hidden">Форма успешно отправлена!</span>
-                            <button type="submit">Отправить</button>
+                            <button type="submit">отправить контакт</button>
                         </div>
                     </div>
                 </form>
+                <div class="popup-border">
+                    <div class="popup-border-left"></div>
+                    <div class="popup-border-bottom"></div>
+                    <div class="popup-border-top"></div>
+                    <div class="popup-border-bottom-right"></div>
+                    <div class="popup-border-right"></div>
+                    <div class="popup-border-top-right"></div>
+                </div>
             </div>
         </div>
 
