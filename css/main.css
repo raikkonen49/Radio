@@ -70,9 +70,14 @@
 	background: url(../img/anonce_radio/light/bg.svg) no-repeat center center;
 }
 
+.error-page {
+	background-size: cover !important;
+	background: url(../img/anonce_radio/light/bg.svg) no-repeat center center;
+}
+
 @media screen and (prefers-color-scheme: dark) {
 
-	.bg, .player_buttons-bg, .popup-form {
+	.bg, .player_buttons-bg, .popup-form, .error-page  {
 		background: url(../img/anonce_radio/dark/bg.svg) no-repeat center center;
 	}
 
