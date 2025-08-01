@@ -1,5 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<svg id="_Слой_2" data-name="Слой 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 77 77">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 77 77" preserveAspectRatio="xMidYMid meet">
   <defs>
     <style>
       .cls-1 {
@@ -7,7 +6,7 @@
       }
     </style>
   </defs>
-  <g id="_Слой_1-2" data-name="Слой 1">
+  <g>
     <path class="cls-1" d="M24.18,74.91c-8.58-8.6-13.4-13.43-21.98-22.03l.03-52.88H0v2.29h.11s-.03,50.58-.03,50.58v.88s.62.62.62.62l10.98,11.02,10.98,11.02.62.62h.88s51.02.1,51.02.1v.05h2.13v-2.17l-53.12-.1Z"/>
   </g>
 </svg>

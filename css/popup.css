@@ -1,48 +1,28 @@
-/* Кнопка открытия */
-.open-form-btn {
-  padding: 12px 24px;
-  font-size: 16px;
-  cursor: pointer;
-  background: #0077cc;
-  color: white;
-  border: none;
-  border-radius: 4px;
-  transition: background-color 0.3s ease;
-}
-
-.open-form-btn:hover {
-  background: #005fa3;
-}
-
-/* Затемнение фона */
 .popup-overlay {
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(0, 0, 0, 0.6);
   display: flex;
   justify-content: center;
   align-items: center;
   z-index: 9999;
+  overflow-y: auto;
 }
 
 .hidden {
   display: none;
 }
 
-/* Сама форма */
 .popup-form {
-  background: #fff;
   width: 1024px;
-  height: 768px;
+  height: auto;
   padding: 25px;
   box-sizing: border-box;
   position: relative;
   display: flex;
   flex-direction: column;
-  overflow-y: auto;
   font-family: var(--main-font) !important;
   border-radius: 8px;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
@@ -59,26 +39,42 @@
   z-index: -1;
 }
 
-/* Заголовок + описание + крестик в одну линию */
+
 .form-header {
   display: flex;
   align-items: flex-start;
   justify-content: space-between;
+  flex-wrap: wrap;
   position: relative;
   z-index: 10;
 }
-
-/* Заголовок слева */
 
 .form-title-wrap {
   flex: 0 0 490px;
   height: 179px;
   padding: 25px 40px 0 40px;
   background-color: var(--color-light);
-  -webkit-mask: url(../img/popup/title-bg.svg) no-repeat center center;
-  mask: url(../img/popup/title-bg.svg) no-repeat center center;
+  -webkit-mask: url(../img/popup/title-bg.svg) no-repeat left top;
+  mask: url(../img/popup/title-bg.svg) no-repeat left top;
   -webkit-mask-size: contain;
   mask-size: contain;
+}
+
+.form-dots {
+  display: none;
+  position: relative;
+}
+
+.form-dots::before {
+  content: '• • • •';
+  position: absolute;
+  top: -3px;
+  left: -70px;
+  font-size: 18px;
+  color: var(--color-light);
+  width: 100%;
+  text-align: center;
+  white-space: nowrap;
 }
 
 .form-title {
@@ -90,7 +86,7 @@
   word-spacing: -15px;
 }
 
-/* Текст по центру, мелкий шрифт */
+
 .form-description {
   flex: 1;
   font-size: 11px;
@@ -110,7 +106,7 @@
   font-family: var(--header-font);
 }
 
-/* Крестик справа */
+
 .close-btn {
   width: 61px;
   height: 61px;
@@ -125,7 +121,7 @@
   color: #ff3b3b;
 }
 
-/* Инпуты и textarea в колонку */
+
 .form-group {
   display: flex;
   flex-direction: column;
@@ -135,7 +131,7 @@
   z-index: 10;
 }
 
-/* Обёртка для полей - позиционирование для звёздочки */
+
 .field-wrapper {
   position: relative;
   padding: 1px 10px;
@@ -146,7 +142,7 @@
   margin-bottom: 0;
 }
 
-/* Поля ввода и textarea */
+
 .field-wrapper input,
 .field-wrapper textarea {
   width: 100%;
@@ -346,7 +342,6 @@
   display: none;
 }
 
-
 .field-border-text-error-bg::before {
   position: absolute;
   content: '';
@@ -396,11 +391,10 @@
   background-color: var(--color-hover);
 }
 
-/* Подсветка невалидных полей */
 .field-wrapper.invalid .field-border-error::before,
 .field-wrapper.invalid .field-border-error::after,
 .field-wrapper.invalid .field-border-error-bg::before,
-.field-wrapper.invalid .field-border-error-bg::after, 
+.field-wrapper.invalid .field-border-error-bg::after,
 .field-wrapper.invalid .field-border-text-error::before,
 .field-wrapper.invalid .field-border-text-error::after,
 .field-wrapper.invalid .field-border-text-error-bg::before,
@@ -408,7 +402,6 @@
   display: block;
 }
 
-/* Звездочка справа у обёртки если невалидно */
 .field-wrapper.invalid::after {
   content: '';
   width: 15px;
@@ -436,12 +429,13 @@
   z-index: 10;
 }
 
-/* Левая часть — чекбокс */
 .checkbox-label {
   display: flex;
   align-items: center;
   gap: 8px;
   font-size: 14px;
+  color: var(--color-light);
+  font-family: var(--main-font);
   cursor: pointer;
   user-select: none;
   position: relative;
@@ -460,7 +454,6 @@
   position: relative;
 }
 
-/* галочка поверх */
 .checkbox-label input[type="checkbox"]:checked+.checkbox-custom::after {
   content: '';
   position: absolute;
@@ -474,7 +467,6 @@
   pointer-events: none;
 }
 
-/* Правая часть — сообщение об ошибке и кнопка */
 .form-footer-right {
   display: flex;
   align-items: baseline;
@@ -482,7 +474,6 @@
   flex-shrink: 0;
 }
 
-/* Красный текст ошибки */
 .error-text {
   color: #e74c3c;
   font-size: 13px;
@@ -491,7 +482,6 @@
   padding: 0;
 }
 
-/* Зеленый текст успешной отправки */
 .success-text {
   color: #27ae60;
   font-size: 13px;
@@ -504,10 +494,10 @@
 /* Кнопка отправки */
 button[type="submit"] {
   width: 201px;
-  height: 73px;
+  height: 72px;
   background-color: var(--color-light);
-  -webkit-mask: url(../img/popup/button.svg) no-repeat center center;
-  mask: url(../img/popup/button.svg) no-repeat center center;
+  -webkit-mask: url(../img/popup/button.svg) no-repeat right bottom;
+  mask: url(../img/popup/button.svg) no-repeat right bottom;
   -webkit-mask-size: contain;
   mask-size: contain;
   padding: 11px 10px 0 26px;
@@ -531,9 +521,9 @@ button[type="submit"]:hover {
 .popup-border-left {
   position: absolute;
   top: 204px;
-  left: 20px;
-  bottom: 30px;
-  width: 46px;
+  left: 25px;
+  bottom: 25px;
+  width: 41px;
   background-color: var(--color-light);
   -webkit-mask: url(../img/popup/popup-border-left.svg) no-repeat top left;
   mask: url(../img/popup/popup-border-left.svg) no-repeat top left;
@@ -543,21 +533,21 @@ button[type="submit"]:hover {
 
 .popup-border-bottom {
   position: absolute;
-  left: 20px;
+  left: 25px;
   right: 233px;
-  bottom: 30px;
+  bottom: 25px;
   height: 2px;
   background-color: var(--color-light);
-  -webkit-mask: url(../img/popup/popup-border-bottom.svg) no-repeat left center;
-  mask: url(../img/popup/popup-border-bottom.svg) no-repeat left center;
+  -webkit-mask: url(../img/popup/popup-border-bottom.svg) repeat left bottom;
+  mask: url(../img/popup/popup-border-bottom.svg) repeat left bottom;
   -webkit-mask-size: cover;
   mask-size: cover;
 }
 
 .popup-border-bottom-right {
   position: absolute;
-  right: 23px;
-  bottom: 30px;
+  right: 22px;
+  bottom: 25px;
   height: 87px;
   width: 216px;
   background-color: var(--color-light);
@@ -574,16 +564,16 @@ button[type="submit"]:hover {
   height: 77px;
   width: 77px;
   background-color: var(--color-light);
-  -webkit-mask: url(../img/popup/popup-border-top-right.svg) no-repeat center center;
-  mask: url(../img/popup/popup-border-top-right.svg) no-repeat center center;
+  -webkit-mask: url(../img/popup/popup-border-top-right.svg) no-repeat top left;
+  mask: url(../img/popup/popup-border-top-right.svg) no-repeat top left;
   -webkit-mask-size: contain;
   mask-size: contain;
 }
 
 .popup-border-right {
   position: absolute;
-  top: 101px;
-  bottom: 116px;
+  top: 100px;
+  bottom: 110px;
   right: 25px;
   width: 2px;
   background-color: var(--color-light);
@@ -604,4 +594,282 @@ button[type="submit"]:hover {
   mask: url(../img/popup/popup-border-bottom.svg) no-repeat left center;
   -webkit-mask-size: cover;
   mask-size: cover;
+}
+
+.popup-border-underline {
+  position: absolute;
+  bottom: 38px;
+  right: 221px;
+  left: 85px;
+  height: 54px;
+  background-color: var(--color-light);
+  -webkit-mask: url(../img/popup/under-line.svg) no-repeat right bottom;
+  mask: url(../img/popup/under-line.svg) no-repeat right bottom;
+  -webkit-mask-size: cover;
+  mask-size: cover;
+}
+
+.error-wrap {
+  padding-right: 5px;
+}
+
+.popup-form.modify .form-title-wrap {
+  -webkit-mask: url(../img/popup/mob-top-left.svg) no-repeat left top;
+  mask: url(../img/popup/mob-top-left.svg) no-repeat left top;
+  flex: 0 0 301px;
+  padding: 25px 50px 0 40px;
+}
+
+.popup-form.modify .form-dots {
+  display: block;
+}
+
+.form-dots::before {
+  top: 15px;
+  left: -295px;
+}
+
+
+@media (max-width: 1080px) {
+
+  .form-header {
+    flex-wrap: wrap;
+  }
+
+  .popup-form {
+    height: auto;
+    width: 540px;
+    padding-top: 40px;
+  }
+
+  .form-dots {
+    display: block;
+  }
+
+  .form-description {
+    flex: 0 0 100%;
+    order: 4;
+    position: absolute;
+    left: 40px;
+    right: 40px;
+    top: 70px;
+    padding: 0;
+  }
+
+  .form-title-wrap {
+    flex: 0 0 300px;
+    height: 122px;
+    padding: 15px 20px 0 20px;
+  }
+
+  .form-title {
+    font-size: 18px;
+  }
+
+  .form-group {
+    margin-top: 40px;
+    padding: 0 40px 0 40px;
+  }
+
+  .popup-border-left {
+    top: 150px;
+    left: 25px;
+    bottom: 25px;
+    width: 25px;
+    -webkit-mask: url(../img/popup/mob-left.svg) no-repeat left top;
+    mask: url(../img/popup/mob-left.svg) no-repeat left top;
+    -webkit-mask-size: cover;
+    mask-size: cover;
+  }
+
+  .popup-border-bottom {
+    right: 235px;
+  }
+
+  .popup-border-top-right {
+    width: 50px;
+    height: 50px;
+    top: 40px;
+    right: 25px;
+  }
+
+  .popup-border-right {
+    top: 88px;
+  }
+
+  .close-btn {
+    margin-top: -10px;
+    margin-right: -10px;
+    width: 50px;
+    height: 50px;
+  }
+
+  .popup-border-top {
+    top: 40px;
+    right: 75px;
+  }
+
+  .popup-border-underline {
+    bottom: 33px;
+    right: 33px;
+    left: auto;
+    width: 216px;
+    height: 87px;
+    background-color: var(--color-light);
+    -webkit-mask: url(../img/popup/popup-border-bottom-right.svg) no-repeat right bottom;
+    mask: url(../img/popup/popup-border-bottom-right.svg) no-repeat right bottom;
+    -webkit-mask-size: cover;
+    mask-size: cover;
+  }
+
+  .popup-border-underline-mob {
+    position: absolute;
+    bottom: 33px;
+    right: 248px;
+    left: 65px;
+    height: 2px;
+    background-color: var(--color-light);
+    -webkit-mask: url(../img/popup/underline.svg) no-repeat right bottom;
+    mask: url(../img/popup/underline.svg) no-repeat right bottom;
+    -webkit-mask-size: cover;
+    mask-size: cover;
+  }
+
+  .popup-border-underline-right {
+    position: absolute;
+    bottom: 120px;
+    right: 33px;
+    height: 61px;
+    width: 2px;
+    background-color: var(--color-light);
+    -webkit-mask: url(../img/popup/underline-right.svg) no-repeat right bottom;
+    mask: url(../img/popup/underline-right.svg) no-repeat right bottom;
+    -webkit-mask-size: cover;
+    mask-size: cover;
+  }
+
+  .form-footer {
+    align-items: flex-start;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding-left: 40px;
+    margin-top: 20px;
+  }
+
+  .error-wrap {
+    flex: 0 0 240px;
+  }
+
+  .checkbox-label {
+    width: 100%;
+  }
+
+  .field-wrapper input,
+  .field-border::before,
+  .field-border::after {
+    height: 40px;
+  }
+
+  .field-wrapper {
+    padding: 1px 7px;
+    margin-bottom: 10px;
+  }
+
+  .popup-form.modify .form-title-wrap {
+    -webkit-mask: url(../img/popup/mob-mob-top-left.svg) no-repeat left top;
+    mask: url(../img/popup/mob-mob-top-left.svg) no-repeat left top;
+    flex: 0 0 300px;
+    padding: 12px 20px 0 20px;
+  }
+
+  .popup-form.modify .form-title {
+    font-size: 24px;
+  }
+
+  .popup-form.modify .popup-border-left {
+    top: 128px;
+    width: 20px;
+  }
+
+  .popup-form.modify .form-group {
+    margin-top: -60px;
+  }
+
+  .field-border-error, .field-border-error-bg {
+    bottom: -1px;
+  }
+
+}
+
+@media screen and (prefers-color-scheme: dark) {
+
+  .form-title-wrap,
+  .popup-border-left,
+  .popup-border-bottom,
+  .popup-border-top,
+  .popup-border-bottom-right,
+  .popup-border-right,
+  .popup-border-top-right,
+  .popup-border-underline,
+  .popup-border-underline-mob,
+  .popup-border-underline-right,
+  .field-border::before,
+  .field-border::after,
+  .field-border-text::before,
+  .field-border-text::after,
+  button[type="submit"] {
+    background-color: var(--color-dark);
+  }
+
+  .form-title,
+  button[type="submit"] {
+    color: var(--color-light);
+  }
+
+  .form-description {
+    color: var(--color-white);
+  }
+
+  .field-wrapper input::placeholder,
+  .field-wrapper textarea::placeholder {
+    color: var(--color-dark);
+  }
+
+  .field-wrapper input::-webkit-input-placeholder,
+  .field-wrapper textarea::-webkit-input-placeholder {
+    color: var(--color-dark);
+  }
+
+  .field-wrapper input::-moz-placeholder,
+  .field-wrapper textarea::-moz-placeholder {
+    color: var(--color-dark);
+  }
+
+  .field-wrapper input:-ms-input-placeholder,
+  .field-wrapper textarea:-ms-input-placeholder {
+    color: var(--color-dark);
+  }
+
+  .field-wrapper input:-moz-placeholder,
+  .field-wrapper textarea:-moz-placeholder {
+    color: var(--color-dark);
+  }
+
+  .checkbox-label,
+  .form-dots::before {
+    color: var(--color-dark);
+  }
+
+  .checkbox-custom {
+    background-image: url(../img/popup/dark/checkbox.svg);
+  }
+
+  .checkbox-label input[type="checkbox"]:checked+.checkbox-custom::after {
+    background-image: url('../img/popup/dark/checkbox-check.svg');
+  }
+
+  .close-btn {
+    background: url(../img/popup/dark/cross.svg) no-repeat center center;
+  }
+
 }

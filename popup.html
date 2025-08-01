@@ -180,12 +180,10 @@
             </div>
         </div>
 
+        <button onclick="openPopup(this)" data-popup="popupOverlay1">Добавить радио</button>
+        <button onclick="openPopup(this)" data-popup="popupOverlay2">Связаться с нами</button>
 
-        <!-- Кнопка для вызова формы -->
-        <button onclick="openPopup()" class="open-form-btn">Добавить радио</button>
-
-        <!-- Overlay + Popup -->
-        <div class="popup-overlay hidden" id="popupOverlay">
+        <div class="popup-overlay hidden" id="popupOverlay1">
             <div class="popup-form" id="popupForm">
 
                 <!-- Заголовок в одну строку -->
@@ -193,6 +191,7 @@
                     <div class="form-title-wrap">
                         <h2 class="form-title">Добавить ваше радио в каталог радиостанций</h2>
                     </div>
+                    <div class="form-dots"></div>
                     <p class="form-description">
                         <strong>Если вы владелец радиостанции</strong> и вы хотите добавить ваше радио в каталог. Вам
                         нужно знать
@@ -203,11 +202,9 @@
                         владельцем
                         радио. Прислать нам фотографию.
                     </p>
-                    <button class="close-btn" onclick="closePopup()"></button>
+                    <button class="close-btn" onclick="closePopup(this)" data-popup="popupOverlay1"></button>
                 </div>
-
-                <!-- Форма -->
-                <form id="radioForm" novalidate>
+                <form class="popup-form-element" id="contactForm" novalidate>
                     <div class="form-group">
 
                         <div class="field-wrapper">
@@ -253,18 +250,17 @@
                             <div class="field-border-text-error-bg"></div>
                         </div>
                     </div>
-
-                    <!-- Чекбокс и кнопка в линию -->
                     <div class="form-footer">
                         <label class="checkbox-label">
                             <input type="checkbox" name="agreement" required>
                             <span class="checkbox-custom"></span>
                             Согласен с условиями
                         </label>
-
                         <div class="form-footer-right">
-                            <span class="error-text hidden">*Обязательное поле для заполнения</span>
+                            <div class="error-wrap">
+                                <span class="error-text hidden">*Обязательное поле для заполнения</span>
                             <span class="success-text hidden">Форма успешно отправлена!</span>
+                            </div>
                             <button type="submit">отправить контакт</button>
                         </div>
                     </div>
@@ -276,6 +272,78 @@
                     <div class="popup-border-bottom-right"></div>
                     <div class="popup-border-right"></div>
                     <div class="popup-border-top-right"></div>
+                    <div class="popup-border-underline"></div>
+                    <div class="popup-border-underline-mob"></div>
+                    <div class="popup-border-underline-right"></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="popup-overlay hidden" id="popupOverlay2">
+            <div class="popup-form modify" id="popupForm">
+                <div class="form-header">
+                    <div class="form-title-wrap">
+                        <h2 class="form-title">Связаться с нами</h2>
+                    </div>
+                    <div class="form-dots"></div>
+                    <button class="close-btn" onclick="closePopup(this)" data-popup="popupOverlay2"></button>
+                </div>
+                <form class="popup-form-element" id="radioForm" novalidate>
+                    <div class="form-group">
+
+                        <div class="field-wrapper">
+                            <input type="text" name="name" placeholder="Введите ваше ФИО" required />
+                            <div class="field-border"></div>
+                            <div class="field-border-error"></div>
+                            <div class="field-border-error-bg"></div>
+                        </div>
+
+                        <div class="field-wrapper">
+                            <input type="text" name="phone" placeholder="Введите телефон" required />
+                            <div class="field-border"></div>
+                            <div class="field-border-error"></div>
+                            <div class="field-border-error-bg"></div>
+                        </div>
+
+                        <div class="field-wrapper">
+                            <input type="email" name="email" placeholder="Введите email" required />
+                            <div class="field-border"></div>
+                            <div class="field-border-error"></div>
+                            <div class="field-border-error-bg"></div>
+                        </div>
+
+                        <div class="field-wrapper">
+                            <textarea name="message" placeholder="Ваше сообщение" required></textarea>
+                            <div class="field-border-text"></div>
+                            <div class="field-border-text-error"></div>
+                            <div class="field-border-text-error-bg"></div>
+                        </div>
+                    </div>
+                    <div class="form-footer">
+                        <label class="checkbox-label">
+                            <input type="checkbox" name="agreement" required>
+                            <span class="checkbox-custom"></span>
+                            Согласен с условиями
+                        </label>
+                        <div class="form-footer-right">
+                            <div class="error-wrap">
+                                <span class="error-text hidden">*Обязательное поле для заполнения</span>
+                            <span class="success-text hidden">Форма успешно отправлена!</span>
+                            </div>
+                            <button type="submit">отправить контакт</button>
+                        </div>
+                    </div>
+                </form>
+                <div class="popup-border">
+                    <div class="popup-border-left"></div>
+                    <div class="popup-border-bottom"></div>
+                    <div class="popup-border-top"></div>
+                    <div class="popup-border-bottom-right"></div>
+                    <div class="popup-border-right"></div>
+                    <div class="popup-border-top-right"></div>
+                    <div class="popup-border-underline"></div>
+                    <div class="popup-border-underline-mob"></div>
+                    <div class="popup-border-underline-right"></div>
                 </div>
             </div>
         </div>

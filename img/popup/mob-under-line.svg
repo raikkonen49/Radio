@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="_Слой_2" data-name="Слой 2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 893 195">
+  <defs>
+    <style>
+      .cls-1 {
+        stroke: url(#_Безымянный_градиент_32-2);
+        stroke-width: 4px;
+      }
+
+      .cls-1, .cls-2 {
+        fill: none;
+        stroke-miterlimit: 10;
+      }
+
+      .cls-2 {
+        stroke: url(#_Безымянный_градиент_32);
+        stroke-width: 4px;
+      }
+    </style>
+    <linearGradient id="_Безымянный_градиент_32" data-name="Безымянный градиент 32" x1="0" y1="128.2" x2="892.78" y2="128.2" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#1a1a1a" stop-opacity="0"/>
+      <stop offset=".55" stop-color="#1a1a1a" stop-opacity=".67"/>
+      <stop offset="1" stop-color="#1a1a1a"/>
+    </linearGradient>
+    <linearGradient id="_Безымянный_градиент_32-2" data-name="Безымянный градиент 32" x1="891.71" y1="0" x2="891.71" y2="61.05" xlink:href="#_Безымянный_градиент_32"/>
+  </defs>
+  <g id="_Слой_1-2" data-name="Слой 1">
+    <g id="_2х2" data-name="2х2">
+      <g>
+        <polyline class="cls-2" points="0 194.31 563.31 194.31 572.36 185.26 572.36 117.51 595.41 94.47 880.04 94.47 891.71 82.8 891.71 61.04"/>
+        <line class="cls-1" x1="891.71" y1="61.05" x2="891.71"/>
+      </g>
+    </g>
+  </g>
+</svg>
