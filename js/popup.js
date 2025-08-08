@@ -54,3 +54,49 @@ document.querySelectorAll('.popup-form-element').forEach(form => {
     });
   });
 });
+
+// Scroll check
+
+let currentPopup = null;
+
+function openPopup(button) {
+  const popupId = button.getAttribute('data-popup');
+  const popup = document.getElementById(popupId);
+  popup.classList.remove('hidden');
+
+  currentPopup = popup; // сохраняем текущий открытый попап
+
+  // Проверка скролла после открытия
+  setTimeout(() => {
+    checkPopupScroll(popup);
+  }, 50);
+}
+
+function closePopup(button) {
+  const popupId = button.getAttribute('data-popup');
+  const popup = document.getElementById(popupId);
+  popup.classList.add('hidden');
+
+  currentPopup = null; // очищаем, попап закрыт
+}
+
+function checkPopupScroll(popup) {
+  const popupElement = popup.querySelector('.popup-form-element');
+  const formGroup = popup.querySelector('.form-group');
+
+  if (!popupElement || !formGroup) return;
+
+  if (popupElement.scrollHeight > popupElement.clientHeight) {
+    formGroup.classList.add('has-scroll');
+  } else {
+    formGroup.classList.remove('has-scroll');
+  }
+}
+
+// 🔁 Проверка при изменении размера окна
+window.addEventListener('resize', () => {
+  if (currentPopup) {
+    checkPopupScroll(currentPopup);
+  }
+});
+

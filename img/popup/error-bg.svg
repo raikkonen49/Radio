@@ -1,19 +1,12 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<svg id="_Слой_2" data-name="Слой 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 421 54">
-  <defs>
-    <style>
-      .cls-1 {
-        fill: #e52521;
-      }
-
-      .cls-2 {
-        opacity: .2;
-      }
-    </style>
-  </defs>
-  <g id="_Слой_1-2" data-name="Слой 1">
-    <g class="cls-2">
-      <path class="cls-1" d="M11.66,0L.83,10.83l-.83.83v30.69l11.66,11.66h409.8V0H11.66Z"/>
-    </g>
-  </g>
+<svg width="409" height="54" viewBox="0 0 409 54" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g clip-path="url(#clip0_11_38)">
+<g opacity="0.2">
+<path d="M-0.34 0L-11.17 10.83L-12 11.66V42.35L-0.34 54.01H409.46V0H-0.34Z" fill="#E52521"/>
+</g>
+</g>
+<defs>
+<clipPath id="clip0_11_38">
+<rect width="421" height="54" fill="white" transform="translate(-12)"/>
+</clipPath>
+</defs>
 </svg>

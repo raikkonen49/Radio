@@ -1,12 +1,10 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 77 77" preserveAspectRatio="xMidYMid meet">
-  <defs>
-    <style>
-      .cls-1 {
-        fill: #1b1b1b;
-      }
-    </style>
-  </defs>
-  <g>
-    <path class="cls-1" d="M24.18,74.91c-8.58-8.6-13.4-13.43-21.98-22.03l.03-52.88H0v2.29h.11s-.03,50.58-.03,50.58v.88s.62.62.62.62l10.98,11.02,10.98,11.02.62.62h.88s51.02.1,51.02.1v.05h2.13v-2.17l-53.12-.1Z"/>
-  </g>
+<svg width="77" height="77" viewBox="0 0 77 77" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g clip-path="url(#clip0_1_2)">
+<path d="M24.18 74.91C15.6 66.31 10.78 61.48 2.2 52.88L2.23 0H0V2.29H0.11L0.08 52.87V53.75L0.7 54.37L11.68 65.39L22.66 76.41L23.28 77.03H24.16L75.18 77.13V77.18H77.31V75.01L24.19 74.91H24.18Z" fill="#1B1B1B" stroke="#1B1B1B" stroke-width="4"/>
+</g>
+<defs>
+<clipPath id="clip0_1_2">
+<rect width="77" height="77" fill="white"/>
+</clipPath>
+</defs>
 </svg>
